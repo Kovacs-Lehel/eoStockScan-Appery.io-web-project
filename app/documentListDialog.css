@@ -1,0 +1,437 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* eoLogo */
+.documentListDialog_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilegrid_51 */
+.documentListDialog_mobilegrid_51 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.documentListDialog_mobilegrid_51_wrapper {
+
+}
+.documentListDialog_mobilegrid_51 > tr > td {
+	vertical-align: top;
+}
+.documentListDialog_mobilegrid_51_row_0, .documentListDialog_mobilegrid_51_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_52 */
+.documentListDialog_mobilegridcell_52 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_52 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* docLineShowButton */
+#documentListDialog_docLineShowButton {
+
+}
+.ui-btn.documentListDialog_docLineShowButton {
+	margin: 0px 5px 0px 5px;
+}
+/* mobilegridcell_53 */
+.documentListDialog_mobilegridcell_53 {
+	height:30px !important;
+	width:0px;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_53 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_56 */
+.documentListDialog_mobilegridcell_56 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_56 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqLineShowButton */
+#documentListDialog_reqLineShowButton {
+
+}
+.ui-btn.documentListDialog_reqLineShowButton {
+	margin: 0px 5px 0px 5px;
+}
+/* mobilecontainer */
+.ui-content.documentListDialog_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* productListLineList */
+.ui-page .documentListDialog_productListLineList {
+	margin: 4px -15px 0px -15px;
+	display: none;
+}
+/* mobilelistitem_6 */
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_6 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_6 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_6.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_7 */
+.documentListDialog_mobilelistitembutton_7 {
+
+}
+/* mobilecollapsblock_12 */
+.documentListDialog_mobilecollapsblock_12 {
+	margin: 4px 8px 4px 8px;
+}
+.documentListDialog_mobilecollapsblock_12 .ui-collapsible-content {
+	padding: 10px 15px 10px 15px;
+}
+/* mobilelabel_61 */
+.documentListDialog_mobilelabel_61 {
+	text-decoration: none; font-weight: bold; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* productNameDocLineLabel */
+.documentListDialog_productNameDocLineLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_16 */
+.documentListDialog_mobilegrid_16 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.documentListDialog_mobilegrid_16_wrapper {
+
+}
+.documentListDialog_mobilegrid_16 > tr > td {
+	vertical-align: top;
+}
+.documentListDialog_mobilegrid_16_row_0, .documentListDialog_mobilegrid_16_row_0 > td {
+	height: 30px
+}
+.documentListDialog_mobilegrid_16_row_1, .documentListDialog_mobilegrid_16_row_1 > td {
+	height: 30px
+}
+.documentListDialog_mobilegrid_16_row_2, .documentListDialog_mobilegrid_16_row_2 > td {
+	height: 30px
+}
+.documentListDialog_mobilegrid_16_row_3, .documentListDialog_mobilegrid_16_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_17 */
+.documentListDialog_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* productBarcodeLabel */
+.documentListDialog_productBarcodeLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_18 */
+.documentListDialog_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* productBarcodeLabelShow */
+.documentListDialog_productBarcodeLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_19 */
+.documentListDialog_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* requestQuantityLabel */
+.documentListDialog_requestQuantityLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_20 */
+.documentListDialog_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* requestQuantityLabelShow */
+.documentListDialog_requestQuantityLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_21 */
+.documentListDialog_mobilegridcell_21 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_21 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* scanQuantityLabel */
+.documentListDialog_scanQuantityLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_22 */
+.documentListDialog_mobilegridcell_22 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* scanQuantityLabelShow */
+.documentListDialog_scanQuantityLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_23 */
+.documentListDialog_mobilegridcell_23 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* qrCodeLabel */
+.documentListDialog_qrCodeLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_24 */
+.documentListDialog_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* qrCodeLabelShow */
+.documentListDialog_qrCodeLabelShow {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* productReqLineList */
+.ui-page .documentListDialog_productReqLineList {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_73 */
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_73 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_73 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 10px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.documentListDialog_mobilelistitem_73.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelabel_79 */
+.documentListDialog_mobilelabel_79 {
+	text-decoration: none; font-weight: bold; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelistitembutton_74 */
+.documentListDialog_mobilelistitembutton_74 {
+
+}
+/* mobilegrid_82 */
+.documentListDialog_mobilegrid_82 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.documentListDialog_mobilegrid_82_wrapper {
+
+}
+.documentListDialog_mobilegrid_82 > tr > td {
+	vertical-align: top;
+}
+.documentListDialog_mobilegrid_82_row_0, .documentListDialog_mobilegrid_82_row_0 > td {
+	height: 30px
+}
+.documentListDialog_mobilegrid_82_row_1, .documentListDialog_mobilegrid_82_row_1 > td {
+	height: 30px
+}
+.documentListDialog_mobilegrid_82_row_2, .documentListDialog_mobilegrid_82_row_2 > td {
+	height: 30px
+}
+/* mobilegridcell_83 */
+.documentListDialog_mobilegridcell_83 {
+	height:30px !important;
+	width:200px;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_83 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* productNameReqLineLabel */
+.documentListDialog_productNameReqLineLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_84 */
+.documentListDialog_mobilegridcell_84 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_84 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_85 */
+.documentListDialog_mobilegridcell_85 {
+	height:30px !important;
+	width:200px;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_85 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQtyReqLineLabel */
+.documentListDialog_reqQtyReqLineLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_86 */
+.documentListDialog_mobilegridcell_86 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_86 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQtyReqLineShowLabel */
+.documentListDialog_reqQtyReqLineShowLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_90 */
+.documentListDialog_mobilegridcell_90 {
+	height:30px !important;
+	width:200px;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_90 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQtyRemainingReqLineLabel */
+.documentListDialog_reqQtyRemainingReqLineLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_91 */
+.documentListDialog_mobilegridcell_91 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.documentListDialog_mobilegridcell_91 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQtyRemainingReqLineShowLabel */
+.documentListDialog_reqQtyRemainingReqLineShowLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.documentListDialog_mobilefooter {
+	min-height:38px;
+}

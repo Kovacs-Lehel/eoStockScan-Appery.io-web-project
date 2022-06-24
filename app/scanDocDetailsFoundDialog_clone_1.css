@@ -1,0 +1,110 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.scanDocDetailsFoundDialog_clone_1_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* eoLogo */
+.scanDocDetailsFoundDialog_clone_1_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.scanDocDetailsFoundDialog_clone_1_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.scanDocDetailsFoundDialog_clone_1_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* productNameLabel */
+.scanDocDetailsFoundDialog_clone_1_productNameLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_5 */
+.scanDocDetailsFoundDialog_clone_1_mobilegrid_5 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.scanDocDetailsFoundDialog_clone_1_mobilegrid_5_wrapper {
+
+}
+.scanDocDetailsFoundDialog_clone_1_mobilegrid_5 > tr > td {
+	vertical-align: top;
+}
+.scanDocDetailsFoundDialog_clone_1_mobilegrid_5_row_0, .scanDocDetailsFoundDialog_clone_1_mobilegrid_5_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_6 */
+.scanDocDetailsFoundDialog_clone_1_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanDocDetailsFoundDialog_clone_1_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQuantityLabel */
+.scanDocDetailsFoundDialog_clone_1_reqQuantityLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_7 */
+.scanDocDetailsFoundDialog_clone_1_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanDocDetailsFoundDialog_clone_1_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* reqQuantityShowLabel */
+.scanDocDetailsFoundDialog_clone_1_reqQuantityShowLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* spacer_12 */
+.scanDocDetailsFoundDialog_clone_1_spacer_12 {
+	width: auto; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* scannedQuantityInput */
+.scanDocDetailsFoundDialog_clone_1_scannedQuantityInput {
+	margin: 4px 0px 4px 0px;
+}
+/* okButton */
+#scanDocDetailsFoundDialog_clone_1_okButton {
+
+}
+.ui-btn.scanDocDetailsFoundDialog_clone_1_okButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.scanDocDetailsFoundDialog_clone_1_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.scanDocDetailsFoundDialog_clone_1_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}

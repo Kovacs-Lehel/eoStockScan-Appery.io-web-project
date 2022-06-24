@@ -1,0 +1,233 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.newDocumentListDialog_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* eoLogo */
+.newDocumentListDialog_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.newDocumentListDialog_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.newDocumentListDialog_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilelist_5 */
+.ui-page .newDocumentListDialog_mobilelist_5 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_6 */
+.ui-mobile-viewport ul[data-role="listview"] li.newDocumentListDialog_mobilelistitem_6 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.newDocumentListDialog_mobilelistitem_6 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.newDocumentListDialog_mobilelistitem_6.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_7 */
+.newDocumentListDialog_mobilelistitembutton_7 {
+
+}
+/* mobilecollapsblock_12 */
+.newDocumentListDialog_mobilecollapsblock_12 {
+	margin: 4px 8px 4px 8px;
+}
+.newDocumentListDialog_mobilecollapsblock_12 .ui-collapsible-content {
+	padding: 10px 15px 10px 15px;
+}
+/* productNameLabel */
+.newDocumentListDialog_productNameLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_16 */
+.newDocumentListDialog_mobilegrid_16 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.newDocumentListDialog_mobilegrid_16_wrapper {
+
+}
+.newDocumentListDialog_mobilegrid_16 > tr > td {
+	vertical-align: top;
+}
+.newDocumentListDialog_mobilegrid_16_row_0, .newDocumentListDialog_mobilegrid_16_row_0 > td {
+	height: 30px
+}
+.newDocumentListDialog_mobilegrid_16_row_1, .newDocumentListDialog_mobilegrid_16_row_1 > td {
+	height: 30px
+}
+.newDocumentListDialog_mobilegrid_16_row_2, .newDocumentListDialog_mobilegrid_16_row_2 > td {
+	height: 30px
+}
+.newDocumentListDialog_mobilegrid_16_row_3, .newDocumentListDialog_mobilegrid_16_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_17 */
+.newDocumentListDialog_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* productBarcodeLabel */
+.newDocumentListDialog_productBarcodeLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_18 */
+.newDocumentListDialog_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* productBarcodeLabelShow */
+.newDocumentListDialog_productBarcodeLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_19 */
+.newDocumentListDialog_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* requestQuantityLabel */
+.newDocumentListDialog_requestQuantityLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_20 */
+.newDocumentListDialog_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* requestQuantityLabelShow */
+.newDocumentListDialog_requestQuantityLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_21 */
+.newDocumentListDialog_mobilegridcell_21 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_21 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* scanQuantityLabel */
+.newDocumentListDialog_scanQuantityLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_22 */
+.newDocumentListDialog_mobilegridcell_22 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* scanQuantityLabelShow */
+.newDocumentListDialog_scanQuantityLabelShow {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_23 */
+.newDocumentListDialog_mobilegridcell_23 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* qrCodeLabel */
+.newDocumentListDialog_qrCodeLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_24 */
+.newDocumentListDialog_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.newDocumentListDialog_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* qrCodeLabelShow */
+.newDocumentListDialog_qrCodeLabelShow {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.newDocumentListDialog_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.newDocumentListDialog_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}

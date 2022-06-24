@@ -1,0 +1,93 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.scanDocDetailsNotFoundDialog_clone_1_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel_2 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilelabel_2 {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* spacer_3 */
+.scanDocDetailsNotFoundDialog_clone_1_spacer_3 {
+	width: 260px; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_4 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilelabel_4 {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_5 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilegrid_5 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegrid_5_wrapper {
+
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegrid_5 > tr > td {
+	vertical-align: top;
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegrid_5_row_0, .scanDocDetailsNotFoundDialog_clone_1_mobilegrid_5_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_6 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yesButton */
+#scanDocDetailsNotFoundDialog_clone_1_yesButton {
+
+}
+.ui-btn.scanDocDetailsNotFoundDialog_clone_1_yesButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_7 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_10 */
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanDocDetailsNotFoundDialog_clone_1_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* noButton */
+#scanDocDetailsNotFoundDialog_clone_1_noButton {
+
+}
+.ui-btn.scanDocDetailsNotFoundDialog_clone_1_noButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.scanDocDetailsNotFoundDialog_clone_1_mobilefooter {
+	min-height:38px;
+}

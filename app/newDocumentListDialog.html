@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            newDocumentListDialog
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" data-dialog="true" style="min-height:480px;" dsid="newDocumentListDialog"
+        id="newDocumentListDialog" class="type-interior" data-theme="d" data-close-btn='right'>
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="newDocumentListDialog_mobileheader" class="lucidaGrandeFont  newDocumentListDialog_mobileheader"
+            white-space="normal">
+                <h1 dsid="mobileheader">
+                    Lista Itemelor
+                </h1>
+                <!-- mobileworkarea_4 -->
+                <div class="ui-btn-left newDocumentListDialog_mobileworkarea_4 newDocumentListDialog_mobileworkarea_4">
+                </div>
+                <!-- eoLogo -->
+                <img class="topRight  newDocumentListDialog_eoLogo" src="../img/eoLogo295x295.jpg"
+                id="newDocumentListDialog_eoLogo" dsid="eoLogo" name="eoLogo" />
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="newDocumentListDialog_mobilecontainer" name="mobilecontainer"
+            class="newDocumentListDialog_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="d">
+                <link href="newDocumentListDialog.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="newDocumentListDialog.js">
+                </script>
+                <!-- mobileworkarea_2 -->
+                <div class="newDocumentListDialog_mobileworkarea_2 newDocumentListDialog_mobileworkarea_2">
+                    <!-- mobilelist_5 -->
+                    <ul data-role="listview" id="newDocumentListDialog_mobilelist_5" class="newDocumentListDialog_mobilelist_5"
+                    name="mobilelist_5" dsid="mobilelist_5" data-theme="d" data-divider-theme="b" data-count-theme="b"
+                    style="" data-split-icon="carat-r">
+                        <!-- mobilelistitem_6 -->
+                        <li id="newDocumentListDialog_mobilelistitem_6" name="mobilelistitem_6" dsid="mobilelistitem_6"
+                        tabindex="1" data-icon="carat-r" class="newDocumentListDialog_mobilelistitem_6  ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <div class="ui-li-static-container ui-btn">
+                                <!-- mobilecollapsblock_12 -->
+                                <div data-role="collapsible" id="newDocumentListDialog_mobilecollapsblock_12" name="mobilecollapsblock_12"
+                                dsid="mobilecollapsblock_12" data-collapsed="true" data-theme="d" data-content-theme="d"
+                                data-iconpos='left' class="newDocumentListDialog_mobilecollapsblock_12">
+                                    <h3 id="newDocumentListDialog_mobilecollapsblockheader_13" name="mobilecollapsblockheader_13"
+                                    dsid="mobilecollapsblockheader_13">
+                                        <!-- productNameLabel -->
+                                        <div name="productNameLabel" id="newDocumentListDialog_productNameLabel" dsid="productNameLabel"
+                                        data-role="appery_label" class="newDocumentListDialog_productNameLabel">
+                                            Product Name
+                                        </div>
+                                    </h3>
+                                    <!-- mobilegrid_16 -->
+                                    <div class="newDocumentListDialog_mobilegrid_16_wrapper" data-wrapper-for="mobilegrid_16">
+                                        <table id="newDocumentListDialog_mobilegrid_16" class="newDocumentListDialog_mobilegrid_16"
+                                        dsid="mobilegrid_16" name="mobilegrid_16" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="newDocumentListDialog_mobilegrid_16_row_0">
+                                                <!-- mobilegridcell_17 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_17" name="mobilegridcell_17" class="newDocumentListDialog_mobilegridcell_17"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- productBarcodeLabel -->
+                                                        <div name="productBarcodeLabel" id="newDocumentListDialog_productBarcodeLabel" dsid="productBarcodeLabel"
+                                                        data-role="appery_label" class="newDocumentListDialog_productBarcodeLabel">
+                                                            Product Barcode
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_18 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_18" name="mobilegridcell_18" class="newDocumentListDialog_mobilegridcell_18"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- productBarcodeLabelShow -->
+                                                        <div name="productBarcodeLabelShow" id="newDocumentListDialog_productBarcodeLabelShow"
+                                                        dsid="productBarcodeLabelShow" data-role="appery_label" class="newDocumentListDialog_productBarcodeLabelShow">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="newDocumentListDialog_mobilegrid_16_row_1">
+                                                <!-- mobilegridcell_19 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_19" name="mobilegridcell_19" class="newDocumentListDialog_mobilegridcell_19"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- requestQuantityLabel -->
+                                                        <div name="requestQuantityLabel" id="newDocumentListDialog_requestQuantityLabel"
+                                                        dsid="requestQuantityLabel" data-role="appery_label" class="newDocumentListDialog_requestQuantityLabel">
+                                                            Request Quantity
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_20 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_20" name="mobilegridcell_20" class="newDocumentListDialog_mobilegridcell_20"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- requestQuantityLabelShow -->
+                                                        <div name="requestQuantityLabelShow" id="newDocumentListDialog_requestQuantityLabelShow"
+                                                        dsid="requestQuantityLabelShow" data-role="appery_label" class="newDocumentListDialog_requestQuantityLabelShow">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="newDocumentListDialog_mobilegrid_16_row_2">
+                                                <!-- mobilegridcell_21 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_21" name="mobilegridcell_21" class="newDocumentListDialog_mobilegridcell_21"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- scanQuantityLabel -->
+                                                        <div name="scanQuantityLabel" id="newDocumentListDialog_scanQuantityLabel" dsid="scanQuantityLabel"
+                                                        data-role="appery_label" class="newDocumentListDialog_scanQuantityLabel">
+                                                            Scan Quantity
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_22 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_22" name="mobilegridcell_22" class="newDocumentListDialog_mobilegridcell_22"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- scanQuantityLabelShow -->
+                                                        <div name="scanQuantityLabelShow" id="newDocumentListDialog_scanQuantityLabelShow"
+                                                        dsid="scanQuantityLabelShow" data-role="appery_label" class="newDocumentListDialog_scanQuantityLabelShow">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="newDocumentListDialog_mobilegrid_16_row_3">
+                                                <!-- mobilegridcell_23 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_23" name="mobilegridcell_23" class="newDocumentListDialog_mobilegridcell_23"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- qrCodeLabel -->
+                                                        <div name="qrCodeLabel" id="newDocumentListDialog_qrCodeLabel" dsid="qrCodeLabel"
+                                                        data-role="appery_label" class="newDocumentListDialog_qrCodeLabel">
+                                                            Product QR Code
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_24 -->
+                                                <td id="newDocumentListDialog_mobilegridcell_24" name="mobilegridcell_24" class="newDocumentListDialog_mobilegridcell_24"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- qrCodeLabelShow -->
+                                                        <div name="qrCodeLabelShow" id="newDocumentListDialog_qrCodeLabelShow" dsid="qrCodeLabelShow"
+                                                        data-role="appery_label" class="newDocumentListDialog_qrCodeLabelShow">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="newDocumentListDialog_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="newDocumentListDialog_mobilefooter" data-theme="d">
+                <!-- mobileworkarea_3 -->
+                <div class="newDocumentListDialog_mobileworkarea_3 newDocumentListDialog_mobileworkarea_3">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.createNewDocumentDialog_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* eoLogo */
+.createNewDocumentDialog_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.createNewDocumentDialog_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.createNewDocumentDialog_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* chooseDocumentTypeLabel */
+.createNewDocumentDialog_chooseDocumentTypeLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* documentTypeChooser */
+.createNewDocumentDialog_documentTypeChooser {
+	margin: 4px 5px 4px 5px;
+}
+/* spacer_8 */
+.createNewDocumentDialog_spacer_8 {
+	width: auto; height: 40px;
+	margin: 4px 0px 4px 0px;
+}
+/* enterSubjectLabel */
+.createNewDocumentDialog_enterSubjectLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* docSubjectInput */
+.createNewDocumentDialog_docSubjectInput {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilefooter */
+.createNewDocumentDialog_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.createNewDocumentDialog_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* submitButton */
+#createNewDocumentDialog_submitButton {
+
+}
+.ui-btn.createNewDocumentDialog_submitButton {
+	margin: 4px 5px 4px 5px;
+}

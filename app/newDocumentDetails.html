@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            newDocumentDetails
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="newDocumentDetails" id="newDocumentDetails"
+        class="type-interior" data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="newDocumentDetails_mobileheader" class="lucidaGrandeFont  newDocumentDetails_mobileheader"
+            white-space="normal">
+                <h1 dsid="mobileheader">
+                    Detalii
+                </h1>
+                <!-- mobileworkarea_4 -->
+                <div class="ui-btn-left newDocumentDetails_mobileworkarea_4 newDocumentDetails_mobileworkarea_4">
+                </div>
+                <!-- eoLogo -->
+                <img class="topRight  newDocumentDetails_eoLogo" src="../img/eoLogo295x295.jpg"
+                id="newDocumentDetails_eoLogo" dsid="eoLogo" name="eoLogo" />
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="newDocumentDetails_mobilecontainer" name="mobilecontainer"
+            class="newDocumentDetails_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="d">
+                <link href="newDocumentDetails.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="newDocumentDetails.js">
+                </script>
+                <!-- mobileworkarea_2 -->
+                <div class="newDocumentDetails_mobileworkarea_2 newDocumentDetails_mobileworkarea_2">
+                    <!-- docNameLabel -->
+                    <div name="docNameLabel" id="newDocumentDetails_docNameLabel" dsid="docNameLabel"
+                    data-role="appery_label" class="lucidaGrandeFont  newDocumentDetails_docNameLabel">
+                        Nume document
+                    </div>
+                    <!-- docTimeLabel -->
+                    <div name="docTimeLabel" id="newDocumentDetails_docTimeLabel" dsid="docTimeLabel"
+                    data-role="appery_label" class="lucidaGrandeFont  newDocumentDetails_docTimeLabel">
+                        Data document
+                    </div>
+                    <!-- spacer_42 -->
+                    <div id="newDocumentDetails_spacer_42" data-role="appery_spacer" dsid="spacer_42"
+                    class='mobilespacer newDocumentDetails_spacer_42'>
+                    </div>
+                    <!-- vizualizeDocPopup -->
+                    <div data-role="popup" name="vizualizeDocPopup" dsid="vizualizeDocPopup" id="newDocumentDetails_vizualizeDocPopup"
+                    class="newDocumentDetails_vizualizeDocPopup" data-corners="false" data-dismissible="true"
+                    data-overlay-theme="d" data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                        <div class="ui-popup-content-wrapper">
+                            <!-- mobilelist_44 -->
+                            <ul data-role="listview" id="newDocumentDetails_mobilelist_44" class="newDocumentDetails_mobilelist_44"
+                            name="mobilelist_44" dsid="mobilelist_44" data-theme="d" data-divider-theme="b" data-count-theme="b"
+                            style="" data-split-icon="carat-r">
+                                <!-- mobilelistitem_45 -->
+                                <li id="newDocumentDetails_mobilelistitem_45" name="mobilelistitem_45" dsid="mobilelistitem_45"
+                                tabindex="5" data-icon="carat-r" class="newDocumentDetails_mobilelistitem_45  ui-btn ui-btn-icon-right ui-icon-carat-r">
+                                    <div class="ui-li-static-container ui-btn">
+                                        <!-- mobilecollapsblock_51 -->
+                                        <div data-role="collapsible" id="newDocumentDetails_mobilecollapsblock_51" name="mobilecollapsblock_51"
+                                        dsid="mobilecollapsblock_51" data-collapsed="false" data-theme="d" data-content-theme="d"
+                                        data-iconpos='left' class="newDocumentDetails_mobilecollapsblock_51">
+                                            <h3 id="newDocumentDetails_mobilecollapsblockheader_52" name="mobilecollapsblockheader_52"
+                                            dsid="mobilecollapsblockheader_52">
+                                                <!-- productNameLabelPopup -->
+                                                <div name="productNameLabelPopup" id="newDocumentDetails_productNameLabelPopup"
+                                                dsid="productNameLabelPopup" data-role="appery_label" class="lucidaGrandeFont  newDocumentDetails_productNameLabelPopup">
+                                                    Product Name
+                                                </div>
+                                            </h3>
+                                            <!-- mobilegrid_55 -->
+                                            <div class="newDocumentDetails_mobilegrid_55_wrapper" data-wrapper-for="mobilegrid_55">
+                                                <table id="newDocumentDetails_mobilegrid_55" class="newDocumentDetails_mobilegrid_55"
+                                                dsid="mobilegrid_55" name="mobilegrid_55" cellpadding=0 cellspacing=0>
+                                                    <col style="width:auto;" />
+                                                    <col style="width:auto;" />
+                                                    <tr class="newDocumentDetails_mobilegrid_55_row_0">
+                                                        <!-- mobilegridcell_56 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_56" name="mobilegridcell_56" class="newDocumentDetails_mobilegridcell_56"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- productBarcodeLabelPopup -->
+                                                                <div name="productBarcodeLabelPopup" id="newDocumentDetails_productBarcodeLabelPopup"
+                                                                dsid="productBarcodeLabelPopup" data-role="appery_label" class="newDocumentDetails_productBarcodeLabelPopup">
+                                                                    Product Barcode
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <!-- mobilegridcell_57 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_57" name="mobilegridcell_57" class="newDocumentDetails_mobilegridcell_57"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- productBarcodeLabelPopupShow -->
+                                                                <div name="productBarcodeLabelPopupShow" id="newDocumentDetails_productBarcodeLabelPopupShow"
+                                                                dsid="productBarcodeLabelPopupShow" data-role="appery_label" class="newDocumentDetails_productBarcodeLabelPopupShow">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="newDocumentDetails_mobilegrid_55_row_1">
+                                                        <!-- mobilegridcell_58 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_58" name="mobilegridcell_58" class="newDocumentDetails_mobilegridcell_58"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- requestQuantityLabelPopup -->
+                                                                <div name="requestQuantityLabelPopup" id="newDocumentDetails_requestQuantityLabelPopup"
+                                                                dsid="requestQuantityLabelPopup" data-role="appery_label" class="newDocumentDetails_requestQuantityLabelPopup">
+                                                                    Request Quantity
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <!-- mobilegridcell_59 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_59" name="mobilegridcell_59" class="newDocumentDetails_mobilegridcell_59"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- requestQuantityLabelPopupShow -->
+                                                                <div name="requestQuantityLabelPopupShow" id="newDocumentDetails_requestQuantityLabelPopupShow"
+                                                                dsid="requestQuantityLabelPopupShow" data-role="appery_label" class="newDocumentDetails_requestQuantityLabelPopupShow">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="newDocumentDetails_mobilegrid_55_row_2">
+                                                        <!-- mobilegridcell_60 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_60" name="mobilegridcell_60" class="newDocumentDetails_mobilegridcell_60"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- scanQuantityLabelPopup -->
+                                                                <div name="scanQuantityLabelPopup" id="newDocumentDetails_scanQuantityLabelPopup"
+                                                                dsid="scanQuantityLabelPopup" data-role="appery_label" class="newDocumentDetails_scanQuantityLabelPopup">
+                                                                    Scan Quantity
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <!-- mobilegridcell_61 -->
+                                                        <td id="newDocumentDetails_mobilegridcell_61" name="mobilegridcell_61" class="newDocumentDetails_mobilegridcell_61"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- scanQuantityLabelPopupShow -->
+                                                                <div name="scanQuantityLabelPopupShow" id="newDocumentDetails_scanQuantityLabelPopupShow"
+                                                                dsid="scanQuantityLabelPopupShow" data-role="appery_label" class="newDocumentDetails_scanQuantityLabelPopupShow">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- scanSearchBarNewDocDetails -->
+                    <div data-role="fieldcontain" class="newDocumentDetails_scanSearchBarNewDocDetails ">
+                        <div id="newDocumentDetails_scanSearchBarNewDocDetails-cover-div">
+                            <img id="newDocumentDetails_scanSearchBarNewDocDetails-cover-img" src="../libs/apperyio/img/icon-search-cover.png"
+                            />
+                        </div>
+                        <input type="search" name="scanSearchBarNewDocDetails" id="newDocumentDetails_scanSearchBarNewDocDetails"
+                        dsid="scanSearchBarNewDocDetails" value="" placeholder="Scanare cu cititor" data-theme="d"
+                        tabindex="8" class="newDocumentDetails_scanSearchBarNewDocDetails" autofocus="true"
+                        />
+                    </div>
+                    <!-- scanProductButton --><!--
+                    --><a data-role="button" name="scanProductButton" dsid="scanProductButton" class="bigButton  centered lucidaGrandeFont  newDocumentDetails_scanProductButton"
+                    id="newDocumentDetails_scanProductButton" data-corners="false" data-icon="camera"
+                    data-iconpos="bottom" x-apple-data-detectors="false" data-mini="false" data-theme="d"
+                    tabindex="2">
+                    Scanare
+                    </a><!--
+                    --><!-- spacer_40 -->
+                    <div id="newDocumentDetails_spacer_40" data-role="appery_spacer" dsid="spacer_40"
+                    class='mobilespacer newDocumentDetails_spacer_40'>
+                    </div>
+                    <!-- submitDocumentButton --><!--
+                    --><a data-role="button" name="submitDocumentButton" dsid="submitDocumentButton" class="redButton smallButton centered lucidaGrandeFont  newDocumentDetails_submitDocumentButton"
+                    id="newDocumentDetails_submitDocumentButton" data-corners="false" data-icon="none"
+                    data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="true" data-theme="d"
+                    tabindex="4" white-space="normal">
+                    Efectueaza
+                    </a><!--
+                    --><!-- spacer_41 -->
+                    <div id="newDocumentDetails_spacer_41" data-role="appery_spacer" dsid="spacer_41"
+                    class='mobilespacer newDocumentDetails_spacer_41'>
+                    </div>
+                    <!-- vizualizeButton --><!--
+                    --><a data-role="button" name="vizualizeButton" dsid="vizualizeButton" class="bigButton centered lucidaGrandeFont  newDocumentDetails_vizualizeButton"
+                    id="newDocumentDetails_vizualizeButton" data-corners="false" data-icon="eye" data-iconpos="bottom"
+                    x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="7">
+                    Vizualizare
+                    </a><!--
+                    --><!-- documentDetailsList -->
+                    <ul data-role="listview" id="newDocumentDetails_documentDetailsList" class="lucidaGrandeFont  newDocumentDetails_documentDetailsList"
+                    name="documentDetailsList" dsid="documentDetailsList" data-theme="d" data-divider-theme="b"
+                    data-count-theme="b" style="" data-split-icon="carat-r">
+                        <!-- documentDetailsListItem -->
+                        <li id="newDocumentDetails_documentDetailsListItem" name="documentDetailsListItem"
+                        dsid="documentDetailsListItem" tabindex="1" data-icon="carat-r" class="newDocumentDetails_documentDetailsListItem  ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <div class="ui-li-static-container ui-btn">
+                                <!-- mobilecollapsblock_24 -->
+                                <div data-role="collapsible" id="newDocumentDetails_mobilecollapsblock_24" name="mobilecollapsblock_24"
+                                dsid="mobilecollapsblock_24" data-collapsed="true" data-theme="d" data-content-theme="d"
+                                data-iconpos='left' class="lucidaGrandeFont  newDocumentDetails_mobilecollapsblock_24">
+                                    <h3 id="newDocumentDetails_mobilecollapsblockheader_25" name="mobilecollapsblockheader_25"
+                                    dsid="mobilecollapsblockheader_25">
+                                        <!-- productNameLabel -->
+                                        <div name="productNameLabel" id="newDocumentDetails_productNameLabel" dsid="productNameLabel"
+                                        data-role="appery_label" class="lucidaGrandeFont  newDocumentDetails_productNameLabel">
+                                            Product Name
+                                        </div>
+                                    </h3>
+                                    <!-- mobilegrid_27 -->
+                                    <div class="newDocumentDetails_mobilegrid_27_wrapper" data-wrapper-for="mobilegrid_27">
+                                        <table id="newDocumentDetails_mobilegrid_27" class="newDocumentDetails_mobilegrid_27"
+                                        dsid="mobilegrid_27" name="mobilegrid_27" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="newDocumentDetails_mobilegrid_27_row_0">
+                                                <!-- mobilegridcell_28 -->
+                                                <td id="newDocumentDetails_mobilegridcell_28" name="mobilegridcell_28" class="newDocumentDetails_mobilegridcell_28"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- productBarcodeLabel -->
+                                                        <div name="productBarcodeLabel" id="newDocumentDetails_productBarcodeLabel" dsid="productBarcodeLabel"
+                                                        data-role="appery_label" class="newDocumentDetails_productBarcodeLabel">
+                                                            Product Barcode
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_29 -->
+                                                <td id="newDocumentDetails_mobilegridcell_29" name="mobilegridcell_29" class="newDocumentDetails_mobilegridcell_29"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- productBarcodeShowLabel -->
+                                                        <div name="productBarcodeShowLabel" id="newDocumentDetails_productBarcodeShowLabel"
+                                                        dsid="productBarcodeShowLabel" data-role="appery_label" class="newDocumentDetails_productBarcodeShowLabel">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="newDocumentDetails_mobilegrid_27_row_1">
+                                                <!-- mobilegridcell_30 -->
+                                                <td id="newDocumentDetails_mobilegridcell_30" name="mobilegridcell_30" class="newDocumentDetails_mobilegridcell_30"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- requestQuantityLabel -->
+                                                        <div name="requestQuantityLabel" id="newDocumentDetails_requestQuantityLabel" dsid="requestQuantityLabel"
+                                                        data-role="appery_label" class="newDocumentDetails_requestQuantityLabel">
+                                                            Request Quantity
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_31 -->
+                                                <td id="newDocumentDetails_mobilegridcell_31" name="mobilegridcell_31" class="newDocumentDetails_mobilegridcell_31"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- requestQuantityShowLabel -->
+                                                        <div name="requestQuantityShowLabel" id="newDocumentDetails_requestQuantityShowLabel"
+                                                        dsid="requestQuantityShowLabel" data-role="appery_label" class="newDocumentDetails_requestQuantityShowLabel">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="newDocumentDetails_mobilegrid_27_row_2">
+                                                <!-- mobilegridcell_34 -->
+                                                <td id="newDocumentDetails_mobilegridcell_34" name="mobilegridcell_34" class="newDocumentDetails_mobilegridcell_34"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- scanQuantityLabel -->
+                                                        <div name="scanQuantityLabel" id="newDocumentDetails_scanQuantityLabel" dsid="scanQuantityLabel"
+                                                        data-role="appery_label" class="newDocumentDetails_scanQuantityLabel">
+                                                            Scan Quantity
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_35 -->
+                                                <td id="newDocumentDetails_mobilegridcell_35" name="mobilegridcell_35" class="newDocumentDetails_mobilegridcell_35"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- scanQuantityShowLabel -->
+                                                        <div name="scanQuantityShowLabel" id="newDocumentDetails_scanQuantityShowLabel"
+                                                        dsid="scanQuantityShowLabel" data-role="appery_label" class="newDocumentDetails_scanQuantityShowLabel">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="newDocumentDetails_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="newDocumentDetails_mobilefooter" data-theme="d">
+                <!-- mobileworkarea_3 -->
+                <div class="newDocumentDetails_mobileworkarea_3 newDocumentDetails_mobileworkarea_3">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

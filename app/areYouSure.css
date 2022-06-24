@@ -1,0 +1,124 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.areYouSure_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* eoLogo */
+.areYouSure_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.areYouSure_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.areYouSure_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilelabel_5 */
+.areYouSure_mobilelabel_5 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* spacer_6 */
+.areYouSure_spacer_6 {
+	width: 260px; height: 50px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_7 */
+.areYouSure_mobilelabel_7 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_8 */
+.areYouSure_mobilegrid_8 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.areYouSure_mobilegrid_8_wrapper {
+
+}
+.areYouSure_mobilegrid_8 > tr > td {
+	vertical-align: top;
+}
+.areYouSure_mobilegrid_8_row_0, .areYouSure_mobilegrid_8_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_9 */
+.areYouSure_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.areYouSure_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yesButton */
+#areYouSure_yesButton {
+
+}
+.ui-btn.areYouSure_yesButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_10 */
+.areYouSure_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.areYouSure_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_13 */
+.areYouSure_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.areYouSure_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_14 */
+.areYouSure_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.areYouSure_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* noButton */
+#areYouSure_noButton {
+
+}
+.ui-btn.areYouSure_noButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.areYouSure_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.areYouSure_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}

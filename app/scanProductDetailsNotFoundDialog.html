@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            scanProductDetailsNotFoundDialog
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" data-dialog="true" style="min-height:480px;" dsid="scanProductDetailsNotFoundDialog"
+        id="scanProductDetailsNotFoundDialog" class="type-interior" data-theme="d" data-close-btn='right'>
+            <!-- mobileheader -->
+            <div data-role="header" data-position="inline" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="scanProductDetailsNotFoundDialog_mobileheader"
+            class="redButton  scanProductDetailsNotFoundDialog_mobileheader">
+                <h1 dsid="mobileheader">
+                    Scanare invalida
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="scanProductDetailsNotFoundDialog_mobilecontainer" name="mobilecontainer"
+            class="red  scanProductDetailsNotFoundDialog_mobilecontainer ui-content" dsid="mobilecontainer"
+            data-theme="d">
+                <link href="scanProductDetailsNotFoundDialog.css" rel="stylesheet" type="text/css"
+                />
+                <script type="text/javascript" src="scanProductDetailsNotFoundDialog.js">
+                </script>
+                <!-- notFoundLabel -->
+                <div name="notFoundLabel" id="scanProductDetailsNotFoundDialog_notFoundLabel" dsid="notFoundLabel"
+                data-role="appery_label" class="red lucidaGrandeFont  scanProductDetailsNotFoundDialog_notFoundLabel">
+                    Codul scanat nu a fost gasit in baza de date.
+                </div>
+                <!-- questionLabel -->
+                <div name="questionLabel" id="scanProductDetailsNotFoundDialog_questionLabel" dsid="questionLabel"
+                data-role="appery_label" class="lucidaGrandeFont  scanProductDetailsNotFoundDialog_questionLabel">
+                    Sigur doriti oricum sa adaugati produsul la document?
+                </div>
+                <!-- mobilegrid_4 -->
+                <div class="scanProductDetailsNotFoundDialog_mobilegrid_4_wrapper" data-wrapper-for="mobilegrid_4">
+                    <table id="scanProductDetailsNotFoundDialog_mobilegrid_4" class="scanProductDetailsNotFoundDialog_mobilegrid_4"
+                    dsid="mobilegrid_4" name="mobilegrid_4" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="scanProductDetailsNotFoundDialog_mobilegrid_4_row_0">
+                            <!-- mobilegridcell_5 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_5" name="mobilegridcell_5"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_5" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- yesButton --><!--
+                                    --><a data-role="button" name="yesButton" dsid="yesButton" class="redButton centered  scanProductDetailsNotFoundDialog_yesButton"
+                                    id="scanProductDetailsNotFoundDialog_yesButton" data-corners="false" data-icon="none"
+                                    data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="false" data-theme="d"
+                                    tabindex="1">
+                                    Da
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_6 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_6" name="mobilegridcell_6"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_6" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_9 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_9" name="mobilegridcell_9"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_9" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- noButton --><!--
+                                    --><a data-role="button" name="noButton" dsid="noButton" class="centered red  scanProductDetailsNotFoundDialog_noButton"
+                                    id="scanProductDetailsNotFoundDialog_noButton" data-corners="false" data-icon="none"
+                                    data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="false" data-theme="d"
+                                    tabindex="2">
+                                    Nu
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- nameProductInput -->
+                <div data-role="fieldcontain" class="scanProductDetailsNotFoundDialog_nameProductInput ">
+                    <input type="text" name="nameProductInput" dsid="nameProductInput" value="" placeholder="Introduceti numele produsului!"
+                    id="scanProductDetailsNotFoundDialog_nameProductInput" tabindex="3" multiple data-theme="d"
+                    class="scanProductDetailsNotFoundDialog_nameProductInput" />
+                </div>
+                <!-- spacer_13 -->
+                <div id="scanProductDetailsNotFoundDialog_spacer_13" data-role="appery_spacer" dsid="spacer_13"
+                class='mobilespacer scanProductDetailsNotFoundDialog_spacer_13'>
+                </div>
+                <!-- scanQTYLabel -->
+                <div name="scanQTYLabel" id="scanProductDetailsNotFoundDialog_scanQTYLabel" dsid="scanQTYLabel"
+                data-role="appery_label" class="lucidaGrandeFont  scanProductDetailsNotFoundDialog_scanQTYLabel">
+                    Cantitatea scanata:
+                </div>
+                <!-- scanQTYInput -->
+                <div data-role="fieldcontain" class="scanProductDetailsNotFoundDialog_scanQTYInput ">
+                    <input type="number" name="scanQTYInput" dsid="scanQTYInput" value="" placeholder="Cantitatea scanata"
+                    id="scanProductDetailsNotFoundDialog_scanQTYInput" tabindex="4" multiple data-theme="d"
+                    class="lucidaGrandeFont  scanProductDetailsNotFoundDialog_scanQTYInput" />
+                </div>
+                <!-- mobilegrid_14 -->
+                <div class="scanProductDetailsNotFoundDialog_mobilegrid_14_wrapper" data-wrapper-for="mobilegrid_14">
+                    <table id="scanProductDetailsNotFoundDialog_mobilegrid_14" class="scanProductDetailsNotFoundDialog_mobilegrid_14"
+                    dsid="mobilegrid_14" name="mobilegrid_14" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:115px;" />
+                        <col style="width:auto;" />
+                        <tr class="scanProductDetailsNotFoundDialog_mobilegrid_14_row_0">
+                            <!-- mobilegridcell_15 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_15" name="mobilegridcell_15"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_15" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_16 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_16" name="mobilegridcell_16"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_16" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- submitButton --><!--
+                                    --><a data-role="button" name="submitButton" dsid="submitButton" class="redButton  scanProductDetailsNotFoundDialog_submitButton"
+                                    id="scanProductDetailsNotFoundDialog_submitButton" data-corners="false" data-icon="none"
+                                    data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="false" data-theme="d"
+                                    tabindex="5">
+                                    Trimite
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_19 -->
+                            <td id="scanProductDetailsNotFoundDialog_mobilegridcell_19" name="mobilegridcell_19"
+                            class="scanProductDetailsNotFoundDialog_mobilegridcell_19" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="inline" class="redButton  scanProductDetailsNotFoundDialog_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="scanProductDetailsNotFoundDialog_mobilefooter"
+            data-theme="d">
+            </div>
+        </div>
+    </body>
+
+</html>

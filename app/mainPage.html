@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            mainPage
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="mainPage" id="mainPage" class="type-interior"
+        data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="mainPage_mobileheader" class="lucidaGrandeFont  mainPage_mobileheader"
+            white-space="normal">
+                <h1 dsid="mobileheader">
+                    Pagina principala
+                </h1>
+                <!-- mobileworkarea_4 -->
+                <div class="ui-btn-left mainPage_mobileworkarea_4 mainPage_mobileworkarea_4">
+                </div>
+                <!-- eoLogo -->
+                <img class="topRight  mainPage_eoLogo" src="../img/eoLogo295x295.jpg" id="mainPage_eoLogo"
+                dsid="eoLogo" name="eoLogo" />
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="mainPage_mobilecontainer" name="mobilecontainer" class="mainPage_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="mainPage.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="mainPage.js">
+                </script>
+                <!-- mobileworkarea_2 -->
+                <div class="mainPage_mobileworkarea_2 mainPage_mobileworkarea_2">
+                    <!-- mobilegrid_27 -->
+                    <div class="mainPage_mobilegrid_27_wrapper" data-wrapper-for="mobilegrid_27">
+                        <table id="mainPage_mobilegrid_27" class="onePage  mainPage_mobilegrid_27" dsid="mobilegrid_27"
+                        name="mobilegrid_27" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <tr class="mainPage_mobilegrid_27_row_0">
+                                <!-- mobilegridcell_28 -->
+                                <td id="mainPage_mobilegridcell_28" name="mobilegridcell_28" class="mainPage_mobilegridcell_28"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- createDocumentButton --><!--
+                                        --><a data-role="button" name="createDocumentButton" dsid="createDocumentButton" class="centeredMenuFirst bigButton lucidaGrandeFont  mainPage_createDocumentButton"
+                                        id="mainPage_createDocumentButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="8">
+                                        Creeaza document
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="mainPage_mobilegrid_27_row_1">
+                                <!-- mobilegridcell_30 -->
+                                <td id="mainPage_mobilegridcell_30" name="mobilegridcell_30" class="mainPage_mobilegridcell_30"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- searchScanDoc -->
+                                        <div data-role="fieldcontain" class="mainPage_searchScanDoc ">
+                                            <div id="mainPage_searchScanDoc-cover-div">
+                                                <img id="mainPage_searchScanDoc-cover-img" src="../libs/apperyio/img/icon-search-cover.png"
+                                                />
+                                            </div>
+                                            <input type="search" name="searchScanDoc" id="mainPage_searchScanDoc" dsid="searchScanDoc"
+                                            value="" placeholder="Scaneaza document cu cititor" data-theme="d" tabindex="18"
+                                            class="menuSearch  mainPage_searchScanDoc" />
+                                        </div>
+                                        <!-- scanDocumentButton --><!--
+                                        --><a data-role="button" name="scanDocumentButton" dsid="scanDocumentButton" class="centeredMenu bigButton lucidaGrandeFont  mainPage_scanDocumentButton"
+                                        id="mainPage_scanDocumentButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="9">
+                                        Scaneaza document
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="mainPage_mobilegrid_27_row_2">
+                                <!-- mobilegridcell_32 -->
+                                <td id="mainPage_mobilegridcell_32" name="mobilegridcell_32" class="mainPage_mobilegridcell_32"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- listDocumentsButton --><!--
+                                        --><a data-role="button" name="listDocumentsButton" dsid="listDocumentsButton" class="centeredMenuLast bigButton lucidaGrandeFont  mainPage_listDocumentsButton"
+                                        id="mainPage_listDocumentsButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="16">
+                                        Listeaza documentele
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="mainPage_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="mainPage_mobilefooter" data-theme="d">
+                <!-- mobileworkarea_3 -->
+                <div class="mainPage_mobileworkarea_3 mainPage_mobileworkarea_3">
+                    <!-- mobilegrid_34 -->
+                    <div class="mainPage_mobilegrid_34_wrapper" data-wrapper-for="mobilegrid_34">
+                        <table id="mainPage_mobilegrid_34" class="mainPage_mobilegrid_34" dsid="mobilegrid_34"
+                        name="mobilegrid_34" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <tr class="mainPage_mobilegrid_34_row_0">
+                                <!-- mobilegridcell_35 -->
+                                <td id="mainPage_mobilegridcell_35" name="mobilegridcell_35" class="mainPage_mobilegridcell_35"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_36 -->
+                                <td id="mainPage_mobilegridcell_36" name="mobilegridcell_36" class="mainPage_mobilegridcell_36"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_39 -->
+                                <td id="mainPage_mobilegridcell_39" name="mobilegridcell_39" class="mainPage_mobilegridcell_39"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- settingsButton --><!--
+                                        --><a data-role="button" name="settingsButton" dsid="settingsButton" class="mainPage_settingsButton"
+                                        id="mainPage_settingsButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="17">
+                                        Setări
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

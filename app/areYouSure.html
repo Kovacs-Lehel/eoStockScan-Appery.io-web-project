@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            areYouSure
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="areYouSure" id="areYouSure"
+        class="type-interior" data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="areYouSure_mobileheader" class="lucidaGrandeFont  areYouSure_mobileheader"
+            white-space="normal">
+                <h1 dsid="mobileheader">
+                    Sunteti sigur?
+                </h1>
+                <!-- mobileworkarea_4 -->
+                <div class="ui-btn-left areYouSure_mobileworkarea_4 areYouSure_mobileworkarea_4">
+                </div>
+                <!-- eoLogo -->
+                <img class="topRight  areYouSure_eoLogo" src="../img/eoLogo295x295.jpg" id="areYouSure_eoLogo"
+                dsid="eoLogo" name="eoLogo" />
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="areYouSure_mobilecontainer" name="mobilecontainer"
+            class="areYouSure_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="d">
+                <link href="areYouSure.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="areYouSure.js">
+                </script>
+                <!-- mobileworkarea_2 -->
+                <div class="areYouSure_mobileworkarea_2 areYouSure_mobileworkarea_2">
+                    <!-- mobilelabel_5 -->
+                    <div name="mobilelabel_5" id="areYouSure_mobilelabel_5" dsid="mobilelabel_5" data-role="appery_label"
+                    class="lucidaGrandeFont  areYouSure_mobilelabel_5">
+                        Cantitatea scanata si cantitatea ceruta nu corespund.
+                    </div>
+                    <!-- spacer_6 -->
+                    <div id="areYouSure_spacer_6" data-role="appery_spacer" dsid="spacer_6" class='mobilespacer areYouSure_spacer_6'>
+                    </div>
+                    <!-- mobilelabel_7 -->
+                    <div name="mobilelabel_7" id="areYouSure_mobilelabel_7" dsid="mobilelabel_7" data-role="appery_label"
+                    class="lucidaGrandeFont  areYouSure_mobilelabel_7">
+                        Sigur doriti sa trimiteti?
+                    </div>
+                    <!-- mobilegrid_8 -->
+                    <div class="areYouSure_mobilegrid_8_wrapper" data-wrapper-for="mobilegrid_8">
+                        <table id="areYouSure_mobilegrid_8" class="areYouSure_mobilegrid_8" dsid="mobilegrid_8"
+                        name="mobilegrid_8" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <tr class="areYouSure_mobilegrid_8_row_0">
+                                <!-- mobilegridcell_9 -->
+                                <td id="areYouSure_mobilegridcell_9" name="mobilegridcell_9" class="areYouSure_mobilegridcell_9"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- yesButton --><!--
+                                        --><a data-role="button" name="yesButton" dsid="yesButton" class="redButton lucidaGrandeFont  areYouSure_yesButton"
+                                        id="areYouSure_yesButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="d"
+                                        tabindex="1">
+                                        Da
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_10 -->
+                                <td id="areYouSure_mobilegridcell_10" name="mobilegridcell_10" class="areYouSure_mobilegridcell_10"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_13 -->
+                                <td id="areYouSure_mobilegridcell_13" name="mobilegridcell_13" class="areYouSure_mobilegridcell_13"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_14 -->
+                                <td id="areYouSure_mobilegridcell_14" name="mobilegridcell_14" class="areYouSure_mobilegridcell_14"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- noButton --><!--
+                                        --><a data-role="button" name="noButton" dsid="noButton" class="lucidaGrandeFont  areYouSure_noButton"
+                                        id="areYouSure_noButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="d"
+                                        tabindex="2">
+                                        Nu
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="areYouSure_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="areYouSure_mobilefooter" data-theme="d">
+                <!-- mobileworkarea_3 -->
+                <div class="areYouSure_mobileworkarea_3 areYouSure_mobileworkarea_3">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,115 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.listDocuments_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* backToMainPage */
+#listDocuments_backToMainPage {
+
+}
+.ui-btn.listDocuments_backToMainPage {
+	margin: 4px 5px 4px 5px!important;
+}
+/* eoLogo */
+.listDocuments_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.listDocuments_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.listDocuments_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* documentsList */
+.ui-page .listDocuments_documentsList {
+	margin: 4px 0px 0px 0px;
+}
+/* documentListItem */
+.ui-mobile-viewport ul[data-role="listview"] li.listDocuments_documentListItem {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.listDocuments_documentListItem .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.listDocuments_documentListItem.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_7 */
+.listDocuments_mobilelistitembutton_7 {
+
+}
+/* mobilegrid_15 */
+.listDocuments_mobilegrid_15 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.listDocuments_mobilegrid_15_wrapper {
+
+}
+.listDocuments_mobilegrid_15 > tr > td {
+	vertical-align: top;
+}
+.listDocuments_mobilegrid_15_row_0, .listDocuments_mobilegrid_15_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_16 */
+.listDocuments_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.listDocuments_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* nameShowLabel */
+.listDocuments_nameShowLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_20 */
+.listDocuments_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.listDocuments_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* statusShowLabel */
+.listDocuments_statusShowLabel {
+	text-decoration: none; font-weight: normal; text-align: right; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.listDocuments_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.listDocuments_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}

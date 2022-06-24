@@ -1,0 +1,165 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.scanProductDetailsNotFoundDialog_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* notFoundLabel */
+.scanProductDetailsNotFoundDialog_notFoundLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* questionLabel */
+.scanProductDetailsNotFoundDialog_questionLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_4 */
+.scanProductDetailsNotFoundDialog_mobilegrid_4 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_4_wrapper {
+
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_4 > tr > td {
+	vertical-align: top;
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_4_row_0, .scanProductDetailsNotFoundDialog_mobilegrid_4_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_5 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yesButton */
+#scanProductDetailsNotFoundDialog_yesButton {
+
+}
+.ui-btn.scanProductDetailsNotFoundDialog_yesButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_6 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_9 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* noButton */
+#scanProductDetailsNotFoundDialog_noButton {
+
+}
+.ui-btn.scanProductDetailsNotFoundDialog_noButton {
+	margin: 4px 5px 4px 5px;
+}
+/* nameProductInput */
+.scanProductDetailsNotFoundDialog_nameProductInput {
+	margin: 4px 0px 4px 0px;
+	display: none;
+}
+/* spacer_13 */
+.scanProductDetailsNotFoundDialog_spacer_13 {
+	width: auto; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* scanQTYLabel */
+.scanProductDetailsNotFoundDialog_scanQTYLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* scanQTYInput */
+.scanProductDetailsNotFoundDialog_scanQTYInput {
+	margin: 4px 0px 4px 0px;
+	display: none;
+}
+/* mobilegrid_14 */
+.scanProductDetailsNotFoundDialog_mobilegrid_14 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_14_wrapper {
+
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_14 > tr > td {
+	vertical-align: top;
+}
+.scanProductDetailsNotFoundDialog_mobilegrid_14_row_0, .scanProductDetailsNotFoundDialog_mobilegrid_14_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_15 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_15 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_16 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_16 {
+	height:30px !important;
+	width:111px;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* submitButton */
+#scanProductDetailsNotFoundDialog_submitButton {
+	display: none;
+}
+.ui-btn.scanProductDetailsNotFoundDialog_submitButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_19 */
+.scanProductDetailsNotFoundDialog_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.scanProductDetailsNotFoundDialog_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilefooter */
+.scanProductDetailsNotFoundDialog_mobilefooter {
+	min-height:38px;
+}

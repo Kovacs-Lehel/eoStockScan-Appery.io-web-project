@@ -1,0 +1,158 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileimage_17 */
+.loginSuccess_mobileimage_17 {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.loginSuccess_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_2 */
+.loginSuccess_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.loginSuccess_mobilegrid_2_wrapper {
+
+}
+.loginSuccess_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.loginSuccess_mobilegrid_2_row_0, .loginSuccess_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+.loginSuccess_mobilegrid_2_row_1, .loginSuccess_mobilegrid_2_row_1 > td {
+	height: 30px
+}
+.loginSuccess_mobilegrid_2_row_2, .loginSuccess_mobilegrid_2_row_2 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.loginSuccess_mobilegridcell_3 {
+	height:30px !important;
+	width:86px;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* nameLabel */
+.loginSuccess_nameLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_4 */
+.loginSuccess_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* nameShowLabel */
+.loginSuccess_nameShowLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_5 */
+.loginSuccess_mobilegridcell_5 {
+	height:30px !important;
+	width:86px;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* usernameLabel */
+.loginSuccess_usernameLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_6 */
+.loginSuccess_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* usernameShowLabel */
+.loginSuccess_usernameShowLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_7 */
+.loginSuccess_mobilegridcell_7 {
+	height:30px !important;
+	width:86px;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* emailLabel */
+.loginSuccess_emailLabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_8 */
+.loginSuccess_mobilegridcell_8 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.loginSuccess_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* emailShowLabel */
+.loginSuccess_emailShowLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* confirmButton */
+#loginSuccess_confirmButton {
+
+}
+.ui-btn.loginSuccess_confirmButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.loginSuccess_mobilefooter {
+	min-height:38px;
+}
+/* logoutButton */
+#loginSuccess_logoutButton {
+
+}
+.ui-btn.loginSuccess_logoutButton {
+	margin: 4px 5px 4px 5px;
+}

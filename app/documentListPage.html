@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            documentListPage
+        </title>
+        <link rel="icon" href="../favicon.jpg?v=18172087">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/twitter-bootstrap/twitter-bootstrap.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/eoCSS.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/i18n.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientInit.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientMetadata.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientServices.js">
+        </script>
+        <script type="text/javascript" src="../js/AppClientModelServices.js">
+        </script>
+        <script type="text/javascript" src="../js/eoStockScanUserLoginService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/userLoggingService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/eoDocsGeneratedService_operations.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="documentListPage" id="documentListPage"
+        class="type-interior" data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="&nbsp;"
+            data-theme="d" name="mobileheader" id="documentListPage_mobileheader" class="lucidaGrandeFont  documentListPage_mobileheader"
+            white-space="normal">
+                <h1 dsid="mobileheader">
+                    Lista articole
+                </h1>
+                <!-- eoLogo -->
+                <img class="topRight  documentListPage_eoLogo" src="../img/eoLogo295x295.jpg" id="documentListPage_eoLogo"
+                dsid="eoLogo" name="eoLogo" />
+                <!-- mobilelabel_60 -->
+                <div name="mobilelabel_60" id="documentListPage_mobilelabel_60" dsid="mobilelabel_60"
+                data-role="appery_label" class="documentListPage_mobilelabel_60">
+                    Linii cerute
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="documentListPage_mobilecontainer" name="mobilecontainer"
+            class="documentListPage_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="d">
+                <link href="documentListPage.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="documentListPage.js">
+                </script>
+                <!-- listLineList -->
+                <ul data-role="listview" id="documentListPage_listLineList" class="documentListPage_listLineList"
+                name="listLineList" dsid="listLineList" data-inset="true" data-theme="d" data-divider-theme="b"
+                data-count-theme="b" style="" data-split-icon="carat-r">
+                    <!-- mobilelistitem_27 -->
+                    <li id="documentListPage_mobilelistitem_27" name="mobilelistitem_27" dsid="mobilelistitem_27"
+                    tabindex="4" data-icon="carat-r" class="documentListPage_mobilelistitem_27  ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- mobilecollapsblock_33 -->
+                            <div data-role="collapsible" id="documentListPage_mobilecollapsblock_33" name="mobilecollapsblock_33"
+                            dsid="mobilecollapsblock_33" data-collapsed="true" data-theme="d" data-content-theme="d"
+                            data-iconpos='left' class="documentListPage_mobilecollapsblock_33">
+                                <h3 id="documentListPage_mobilecollapsblockheader_34" name="mobilecollapsblockheader_34"
+                                dsid="mobilecollapsblockheader_34">
+                                    <!-- productNameDocLineLabel -->
+                                    <div name="productNameDocLineLabel" id="documentListPage_productNameDocLineLabel"
+                                    dsid="productNameDocLineLabel" data-role="appery_label" class="documentListPage_productNameDocLineLabel">
+                                        Product name
+                                    </div>
+                                </h3>
+                                <!-- mobilegrid_37 -->
+                                <div class="documentListPage_mobilegrid_37_wrapper" data-wrapper-for="mobilegrid_37">
+                                    <table id="documentListPage_mobilegrid_37" class="documentListPage_mobilegrid_37"
+                                    dsid="mobilegrid_37" name="mobilegrid_37" cellpadding=0 cellspacing=0>
+                                        <col style="width:auto;" />
+                                        <col style="width:auto;" />
+                                        <tr class="documentListPage_mobilegrid_37_row_0">
+                                            <!-- mobilegridcell_38 -->
+                                            <td id="documentListPage_mobilegridcell_38" name="mobilegridcell_38" class="documentListPage_mobilegridcell_38"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- productBarcodeLabel -->
+                                                    <div name="productBarcodeLabel" id="documentListPage_productBarcodeLabel" dsid="productBarcodeLabel"
+                                                    data-role="appery_label" class="documentListPage_productBarcodeLabel">
+                                                        Product barcode
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <!-- mobilegridcell_39 -->
+                                            <td id="documentListPage_mobilegridcell_39" name="mobilegridcell_39" class="documentListPage_mobilegridcell_39"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- productBarcodeLabelShow -->
+                                                    <div name="productBarcodeLabelShow" id="documentListPage_productBarcodeLabelShow"
+                                                    dsid="productBarcodeLabelShow" data-role="appery_label" class="documentListPage_productBarcodeLabelShow">
+                                                        Label
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="documentListPage_mobilegrid_37_row_1">
+                                            <!-- mobilegridcell_40 -->
+                                            <td id="documentListPage_mobilegridcell_40" name="mobilegridcell_40" class="documentListPage_mobilegridcell_40"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- requestQuantityLabel -->
+                                                    <div name="requestQuantityLabel" id="documentListPage_requestQuantityLabel" dsid="requestQuantityLabel"
+                                                    data-role="appery_label" class="documentListPage_requestQuantityLabel">
+                                                        Request qty
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <!-- mobilegridcell_41 -->
+                                            <td id="documentListPage_mobilegridcell_41" name="mobilegridcell_41" class="documentListPage_mobilegridcell_41"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- requestQuantityLabelShow -->
+                                                    <div name="requestQuantityLabelShow" id="documentListPage_requestQuantityLabelShow"
+                                                    dsid="requestQuantityLabelShow" data-role="appery_label" class="documentListPage_requestQuantityLabelShow">
+                                                        Label
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="documentListPage_mobilegrid_37_row_2">
+                                            <!-- mobilegridcell_42 -->
+                                            <td id="documentListPage_mobilegridcell_42" name="mobilegridcell_42" class="documentListPage_mobilegridcell_42"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- scanQuantityLabel -->
+                                                    <div name="scanQuantityLabel" id="documentListPage_scanQuantityLabel" dsid="scanQuantityLabel"
+                                                    data-role="appery_label" class="documentListPage_scanQuantityLabel">
+                                                        Scan qty
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <!-- mobilegridcell_43 -->
+                                            <td id="documentListPage_mobilegridcell_43" name="mobilegridcell_43" class="documentListPage_mobilegridcell_43"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- scanQuantityLabelShow -->
+                                                    <div name="scanQuantityLabelShow" id="documentListPage_scanQuantityLabelShow" dsid="scanQuantityLabelShow"
+                                                    data-role="appery_label" class="documentListPage_scanQuantityLabelShow">
+                                                        Label
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="documentListPage_mobilegrid_37_row_3">
+                                            <!-- mobilegridcell_44 -->
+                                            <td id="documentListPage_mobilegridcell_44" name="mobilegridcell_44" class="documentListPage_mobilegridcell_44"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- qrCodeLabel -->
+                                                    <div name="qrCodeLabel" id="documentListPage_qrCodeLabel" dsid="qrCodeLabel" data-role="appery_label"
+                                                    class="documentListPage_qrCodeLabel">
+                                                        QR Code
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <!-- mobilegridcell_45 -->
+                                            <td id="documentListPage_mobilegridcell_45" name="mobilegridcell_45" class="documentListPage_mobilegridcell_45"
+                                            colspan=1 rowspan=1>
+                                                <div class="cell-wrapper">
+                                                    <!-- qrCodeLabelShow -->
+                                                    <div name="qrCodeLabelShow" id="documentListPage_qrCodeLabelShow" dsid="qrCodeLabelShow"
+                                                    data-role="appery_label" class="documentListPage_qrCodeLabelShow">
+                                                        Label
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- reqLineList -->
+                <ul data-role="listview" id="documentListPage_reqLineList" class="documentListPage_reqLineList"
+                name="reqLineList" dsid="reqLineList" data-inset="true" data-theme="d" data-divider-theme="b"
+                data-count-theme="b" style="">
+                    <!-- mobilelistitem_6 -->
+                    <li id="documentListPage_mobilelistitem_6" name="mobilelistitem_6" dsid="mobilelistitem_6"
+                    tabindex="1" data-icon="none" class="documentListPage_mobilelistitem_6  ui-btn ui-btn-icon-right ui-icon-none">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- mobilegrid_19 -->
+                            <div class="documentListPage_mobilegrid_19_wrapper" data-wrapper-for="mobilegrid_19">
+                                <table id="documentListPage_mobilegrid_19" class="whiteBG  documentListPage_mobilegrid_19"
+                                dsid="mobilegrid_19" name="mobilegrid_19" cellpadding=0 cellspacing=0>
+                                    <col style="width:204px;" />
+                                    <col style="width:auto;" />
+                                    <tr class="documentListPage_mobilegrid_19_row_0">
+                                        <!-- mobilegridcell_20 -->
+                                        <td id="documentListPage_mobilegridcell_20" name="mobilegridcell_20" class="documentListPage_mobilegridcell_20"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- productNameReqLineLabel -->
+                                                <div name="productNameReqLineLabel" id="documentListPage_productNameReqLineLabel"
+                                                dsid="productNameReqLineLabel" data-role="appery_label" class="documentListPage_productNameReqLineLabel">
+                                                    Label
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- mobilegridcell_21 -->
+                                        <td id="documentListPage_mobilegridcell_21" name="mobilegridcell_21" class="documentListPage_mobilegridcell_21"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="documentListPage_mobilegrid_19_row_1">
+                                        <!-- mobilegridcell_22 -->
+                                        <td id="documentListPage_mobilegridcell_22" name="mobilegridcell_22" class="documentListPage_mobilegridcell_22"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- reqQtyReqLineLabel -->
+                                                <div name="reqQtyReqLineLabel" id="documentListPage_reqQtyReqLineLabel" dsid="reqQtyReqLineLabel"
+                                                data-role="appery_label" class="documentListPage_reqQtyReqLineLabel">
+                                                    Label
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- mobilegridcell_23 -->
+                                        <td id="documentListPage_mobilegridcell_23" name="mobilegridcell_23" class="documentListPage_mobilegridcell_23"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- reqQtyReqLineShowLabel -->
+                                                <div name="reqQtyReqLineShowLabel" id="documentListPage_reqQtyReqLineShowLabel"
+                                                dsid="reqQtyReqLineShowLabel" data-role="appery_label" class="documentListPage_reqQtyReqLineShowLabel">
+                                                    Label
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="documentListPage_mobilegrid_19_row_2">
+                                        <!-- mobilegridcell_24 -->
+                                        <td id="documentListPage_mobilegridcell_24" name="mobilegridcell_24" class="documentListPage_mobilegridcell_24"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- reqQtyRemainingReqLineLabel -->
+                                                <div name="reqQtyRemainingReqLineLabel" id="documentListPage_reqQtyRemainingReqLineLabel"
+                                                dsid="reqQtyRemainingReqLineLabel" data-role="appery_label" class="documentListPage_reqQtyRemainingReqLineLabel">
+                                                    Label
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- mobilegridcell_25 -->
+                                        <td id="documentListPage_mobilegridcell_25" name="mobilegridcell_25" class="documentListPage_mobilegridcell_25"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- reqQtyRemainingReqLineShowLabel -->
+                                                <div name="reqQtyRemainingReqLineShowLabel" id="documentListPage_reqQtyRemainingReqLineShowLabel"
+                                                dsid="reqQtyRemainingReqLineShowLabel" data-role="appery_label" class="documentListPage_reqQtyRemainingReqLineShowLabel">
+                                                    Label
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="documentListPage_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="documentListPage_mobilefooter" data-theme="d">
+                <!-- mobilegrid_12 -->
+                <div class="documentListPage_mobilegrid_12_wrapper" data-wrapper-for="mobilegrid_12">
+                    <table id="documentListPage_mobilegrid_12" class="documentListPage_mobilegrid_12"
+                    dsid="mobilegrid_12" name="mobilegrid_12" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="documentListPage_mobilegrid_12_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="documentListPage_mobilegridcell_13" name="mobilegridcell_13" class="documentListPage_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- docLineShowButton --><!--
+                                    --><a data-role="button" name="docLineShowButton" dsid="docLineShowButton" class="fullCentered  documentListPage_docLineShowButton"
+                                    id="documentListPage_docLineShowButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="2">
+                                    Linii scanate
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="documentListPage_mobilegridcell_14" name="mobilegridcell_14" class="documentListPage_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- reqLineShowButton --><!--
+                                    --><a data-role="button" name="reqLineShowButton" dsid="reqLineShowButton" class="fullCentered  documentListPage_reqLineShowButton"
+                                    id="documentListPage_reqLineShowButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="d" tabindex="3">
+                                    Linii cerute
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

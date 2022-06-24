@@ -1,0 +1,174 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobileworkarea_4*/
+.mainPage_mobileworkarea_4 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* eoLogo */
+.mainPage_eoLogo {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* mobilecontainer */
+.ui-content.mainPage_mobilecontainer {
+	padding: 0px 15px 0px 15px;
+}
+/* mobileworkarea_2*/
+.mainPage_mobileworkarea_2 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilegrid_27 */
+.mainPage_mobilegrid_27 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.mainPage_mobilegrid_27_wrapper {
+
+}
+.mainPage_mobilegrid_27 > tr > td {
+	vertical-align: top;
+}
+.mainPage_mobilegrid_27_row_0, .mainPage_mobilegrid_27_row_0 > td {
+	height: 30%
+}
+.mainPage_mobilegrid_27_row_1, .mainPage_mobilegrid_27_row_1 > td {
+	height: 30%
+}
+.mainPage_mobilegrid_27_row_2, .mainPage_mobilegrid_27_row_2 > td {
+	height: 13px
+}
+/* mobilegridcell_28 */
+.mainPage_mobilegridcell_28 {
+	height:30% !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_28 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* createDocumentButton */
+#mainPage_createDocumentButton {
+
+}
+.ui-btn.mainPage_createDocumentButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_30 */
+.mainPage_mobilegridcell_30 {
+	height:30% !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* searchScanDoc */
+.mainPage_searchScanDoc {
+	margin: 4px 0px 4px 0px;
+	display: none;
+}
+#mainPage_searchScanDoc-cover-div {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	margin: 9px 7px 8px 7px;
+	z-index: 9999;
+}
+/* scanDocumentButton */
+#mainPage_scanDocumentButton {
+
+}
+.ui-btn.mainPage_scanDocumentButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_32 */
+.mainPage_mobilegridcell_32 {
+	height:13px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_32 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* listDocumentsButton */
+#mainPage_listDocumentsButton {
+
+}
+.ui-btn.mainPage_listDocumentsButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.mainPage_mobilefooter {
+	min-height:38px;
+}
+/* mobileworkarea_3*/
+.mainPage_mobileworkarea_3 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilegrid_34 */
+.mainPage_mobilegrid_34 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.mainPage_mobilegrid_34_wrapper {
+
+}
+.mainPage_mobilegrid_34 > tr > td {
+	vertical-align: top;
+}
+.mainPage_mobilegrid_34_row_0, .mainPage_mobilegrid_34_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_35 */
+.mainPage_mobilegridcell_35 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_36 */
+.mainPage_mobilegridcell_36 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_39 */
+.mainPage_mobilegridcell_39 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.mainPage_mobilegridcell_39 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* settingsButton */
+#mainPage_settingsButton {
+
+}
+.ui-btn.mainPage_settingsButton {
+	margin: 0px 5px 0px 5px;
+}

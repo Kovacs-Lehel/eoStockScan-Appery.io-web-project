@@ -1,0 +1,13 @@
+{
+    "short_name": "eoSCAN",
+    "name": "eoSCAN",
+    "description": "App template with tabbed pages. [https://docs.appery.io/docs/appbuilder-jqm-app-templates Learn more].",
+    "display": "fullscreen",
+    "orientation": "any",
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+    ]
+}
